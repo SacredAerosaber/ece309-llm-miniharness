@@ -23,9 +23,9 @@ average cost per append stays constant as N grows.
 
 ## Rule of Five
 
-`Conversation` owns raw heap memory (`Message* data_`), so it needs all
-five special member functions or it will either leak memory or
-double-free it:
+`Conversation` owns raw heap memory `(Message* data_)`, 
+so I need to implement the Rule of Five to make ownership 
+and copying behave correctly.:
 
 - Destructor: frees `data_` with `delete[]`.
 - Copy constructor / copy assignment: allocate a new buffer and
