@@ -1,14 +1,12 @@
-# ECE 309 — Project 2 starter code
+# ECE 309 - Project 2 starter code
 
-This is the starter repo for Project 2 (see the spec for full details).
-
-## What's provided vs. what's yours
+This is the repo for Project 2.
 
 Everything under `include/model/`, `include/harness/`, `src/model_client.cpp`,
 `src/scripted_client.cpp`, `src/replay_client.cpp`, `src/harness.cpp`, and
-`src/main.cpp` is given, working code — read it, don't modify it.
+`src/main.cpp` is given code. This code was not modified by me.
 
-You write:
+The below files were written by me:
 
 - `include/core/message.h` (+ optional `src/message.cpp`)
 - `include/core/conversation.h` / `src/conversation.cpp`
