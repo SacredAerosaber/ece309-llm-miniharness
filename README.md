@@ -23,10 +23,10 @@ cmake --build build
 
 This builds two targets:
 
-- `./build/miniharness` — the interactive CLI
-- `./build/test_p2` — your test suite
+- `./build/miniharness` - the interactive CLI
+- `./build/test_p2` - your test suite
 
-Try it once your `Conversation` and `SentinelScanner` compile:
+Try it once `Conversation` and `SentinelScanner` both compile:
 
 ```bash
 ./build/miniharness --script scripts/greeting.script --save transcript.txt
