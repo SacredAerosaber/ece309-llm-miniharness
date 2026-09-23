@@ -8,7 +8,7 @@ Everything under `include/model/`, `include/harness/`, `src/model_client.cpp`,
 
 The below files were written by me:
 
-- `include/core/message.h` (+ optional `src/message.cpp`)
+- `include/core/message.h`
 - `include/core/conversation.h` / `src/conversation.cpp`
 - `include/core/sentinel_scanner.h` / `src/sentinel_scanner.cpp`
 - `tests/p2/test_p2.cpp`
