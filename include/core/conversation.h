@@ -28,15 +28,21 @@ public:
     // Adds a message to the end. Grows the array first if it's full.
     void append(Message m);
 
-    std::size_t size() const noexcept { return size_; }
+    std::size_t size() const noexcept { 
+        return size_;
+     }
 
     // Throws std::out_of_range if i is too big, instead of reading
     // memory we don't own.
     const Message& at(std::size_t i) const;
 
     // So we can use range-based for loops on a Conversation.
-    const Message* begin() const noexcept { return data_; }
-    const Message* end()   const noexcept { return data_ + size_; }
+    const Message* begin() const noexcept { 
+        return data_;
+     }
+    const Message* end()   const noexcept { return 
+        data_ + size_;
+     }
 
 private:
     // Grows the backing array to hold at least new_capacity messages.

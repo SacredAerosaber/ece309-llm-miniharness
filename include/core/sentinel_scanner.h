@@ -30,7 +30,9 @@ public:
 
     // Not part of what the harness actually needs, just added this so
     // my tests can check pending_ never grows past its bound.
-    std::size_t pending_size() const noexcept { return pending_.size(); }
+    std::size_t pending_size() const noexcept { 
+        return pending_.size();
+    }
 
 private:
     std::string sentinel_;

@@ -1,7 +1,7 @@
 // tests/p2/test_p2.cpp
 //
-// My test suite for P2. 12 tests total, mostly focused on Conversation
-// and SentinelScanner since that's the code I actually wrote. The
+// Test suite for P2. 12 tests total, mostly focused on Conversation
+// and SentinelScanner since that's the code I wrote. The
 // Harness tests near the bottom just check that my classes plug into
 // the provided loop correctly.
 

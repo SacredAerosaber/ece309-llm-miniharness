@@ -14,7 +14,7 @@ Conversation::Conversation(const Conversation& other)
       capacity_(other.size_) {
     // Copy every message over one at a time so we end up with our own
     // array. Message's own copy assignment handles copying the string
-    // content for us.
+    // content.
     for (std::size_t i = 0; i < size_; ++i) {
         data_[i] = other.data_[i];
     }
@@ -24,8 +24,8 @@ Conversation& Conversation::operator=(const Conversation& other) {
     if (this == &other) return *this;
 
     // Simplest way to do this safely: build a full deep copy first,
-    // then move it into *this. If the copy throws halfway through, we
-    // haven't touched *this yet, so nothing gets left in a broken state.
+    // then move it into *this. If the copy throws halfway through, *this 
+    // hasn't been modified yet, so nothing gets left in a broken state.
     Conversation temp(other);
     *this = std::move(temp);
     return *this;
