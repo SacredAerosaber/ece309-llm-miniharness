@@ -24,7 +24,7 @@ cmake --build build
 This builds two targets:
 
 - `./build/miniharness` - the interactive CLI
-- `./build/test_p2` - your test suite
+- `./build/test_p2` - the test suite
 
 Try it once `Conversation` and `SentinelScanner` both compile:
 
